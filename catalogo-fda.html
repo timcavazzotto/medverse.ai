@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo ampliado (FDA) &mdash; Medverse</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header site-header--sub">
+  <div class="wrap">
+    <p class="eyebrow"><a href="index.html">&larr; Medverse</a></p>
+    <h1 class="h1-sub">Catálogo ampliado</h1>
+    <p class="subtitle">1.524 dispositivos extraídos diretamente do <a href="https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices" target="_blank" rel="noopener">AI-Enabled Medical Device List</a> da FDA. Ao contrário das fichas curadas do Medverse, estes <strong>não passaram por verificação individual</strong> de custo, tecnologia ou uso real &mdash; use como ponto de partida de pesquisa, não como recomendação.</p>
+  </div>
+</header>
+
+<main>
+  <section class="tier2 wrap" id="tier2-section" style="padding-top:40px;">
+    <div class="control-row">
+      <input type="search" id="search2" placeholder="Buscar dispositivo ou empresa&hellip;" aria-label="Buscar no catálogo ampliado da FDA">
+      <select id="area2-select" aria-label="Filtrar catálogo ampliado por área"></select>
+    </div>
+    <div class="table-wrap">
+      <table id="tier2-table">
+        <thead>
+          <tr>
+            <th>Dispositivo</th>
+            <th>Empresa</th>
+            <th>Área (FDA)</th>
+            <th>Data</th>
+            <th>Registro</th>
+          </tr>
+        </thead>
+        <tbody id="tier2-body"></tbody>
+      </table>
+    </div>
+    <p class="tier2-count" id="tier2-count"></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Medverse</strong> &middot; <a href="index.html">voltar ao mapa curado &rarr;</a></p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="tier2.js"></script>
+</body>
+</html>
