@@ -44,6 +44,10 @@ const YEAR_BY_NAME = {
   "Buoy Health": 2017,
   "Wysa": 2016,
   "GI Genius": 2021,
+  "SleepUp": 2021,
+  "Biologix (Oxistar + Cloud Biologix)": 2019,
+  "AI Medical Service (AI-EYE)": 2023,
+  "AutocathFFR": 2026,
 };
 
 // ---------- Área: normalização para permitir comparar Tier1 x Tier2 ----------
@@ -235,7 +239,7 @@ function renderCards() {
       <p class="func">${t["Função"]}</p>
       <p class="tech">${(t["Fase / Tecnologia de IA"] || "").split(" — ")[0]}</p>
       <div class="card-footer">
-        <span>${YEAR_BY_NAME[t.Nome] || ""}</span>
+        <span>${t["País de Aprovação"] || ""} &middot; ${YEAR_BY_NAME[t.Nome] || ""}</span>
         <a href="${t["Link Oficial"]}" target="_blank" rel="noopener">site oficial &rarr;</a>
       </div>
     `;
